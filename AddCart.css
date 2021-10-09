@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color:black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/*Login-RegisterBar*/
+.head1{
+	background-image: linear-gradient(to right, #7A1E92, #000000);
+}
+.btn-topmost{
+	color: white;
+	decoration: none;
+}
+.btn-topmost:hover{
+	color: navajowhite;
+}
+.item {
+    position:relative;
+    /*padding-top:20px;*/
+    display:inline-block;
+}
+.notify-badge{
+    position: absolute;
+    right:5px;
+    top:0px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+	background-color: #BE8D82;
+    color:white;
+    padding:5px 10px;
+    font-size:10px;
+}
+
+/*Navbar*/
+.navbar{
+	background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);
+}
+/*.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+#banner {
+  width: 100%;
+  overflow: hidden;
+}*/
+#activehomebutton{
+	color: black !important;
+}
+.nav-link:hover{
+	color: black !important;
+	transform: scale(1.05);
+	transition: all .5s;
+}
+.dropdown-menu{
+	background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
+}
+.dropdown-item:hover{
+	background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);
+	color: white;
+	transform: scale(1.05);
+	transition: all .5s;
+}
+
+/* Main Section*/
+
+#Main_Section{
+	background-color: null;
+	min-width: 100%;
+	min-height: 650px;
+	border:solid 2px #000000;
+}
+.main-div{
+	background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);
+	min-width: 100%;
+	min-height: 650px;
+}
+.product{
+	/*background-color: white;*/
+	min-width: 50%;
+	min-height: 650px;
+}
+.product_details{
+	min-width: 50%;
+	min-height: 650px;
+	/*background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);*/
+}
+.modal-buttons{
+	width:150px;
+	height:40px;
+	background-color: black;
+	color:white;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	
+  }
+  .modal-buttons:hover{
+	background-color: rgb(39, 38, 38);	  
+	color:white;
+	transition: all .3s;
+  }
+
+
+
+/*Footer*/
+
+.footer{
+	background-image: url("Bitcoin1.jpg");
+	width:100%;
+	min-height: 60px;
+	background-size: 100% 300px;
+	/*background-size: cover;
+	background-repeat: no-repeat;*/
+}
+.darkened-image{
+	filter: brightness(100%);
+}
+

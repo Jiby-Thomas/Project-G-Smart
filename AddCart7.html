@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add To Cart 7</title>
+	
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	<link href="AddCart.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div class="head1 text-right pt-2" id="banner">
+	 	<a href="#"><img src="Indian Flag.jpg" width="25" height="16" class="mr-1"></a>
+		<a href="Login Page of GSmart.html"><button type="button" class="btn btn-topmost"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</button></a>
+		<button type="button" class="btn btn-topmost"><i class="fas fa-user-circle"></i>&nbsp;Register</button>
+		<a href="#" class="item"><span class="notify-badge">0</span><img src="../../../Downloads/icons8-shopping-cart-96.png" width="50" height="50" class="mr-3"></a>
+    </div>
+	
+	
+	<header id="Home">
+	
+	<nav class="navbar navbar-fixed navbar-expand-lg navbar-light py-3" style="z-index: 2;"> <a class="navbar-brand ml-md-5 text-white" href="Project GSmart.html"><img src="GSmart.jpg" alt="" width="35" height="29" class="d-inline-block align-text-top"> G-Smart</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    <ul class="navbar-nav ml-md-auto mr-md-5 text-left">
+	      <li class="nav-item active"> <a class="nav-link text-white" id="activehomebutton" href="Project GSmart.html"><i class="fas fa-home"></i>&nbsp;Home</a> </li>
+		  <li class="nav-item"> <a class="nav-link text-white" href="Project GSmart.html#Services"><i class="fas fa-cogs"></i>&nbsp;Services</a> </li>
+		  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i> Brands </a>
+        <div class="dropdown-menu" style="z-index: -1;" aria-labelledby="navbarDropdown1"> 
+			<a class="dropdown-item" href="#">Apple</a> 
+			<a class="dropdown-item" href="#">Samsung</a>
+			<a class="dropdown-item" href="#">OnePlus</a>
+			<a class="dropdown-item" href="#">Realme</a> 
+			<a class="dropdown-item" href="#">Redmi</a>
+			<a class="dropdown-item" href="#">Oppo</a>
+			<a class="dropdown-item" href="#">Vivo</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Refurbished Products</a> </div>
+      </li>
+	      <li class="nav-item"> <a class="nav-link text-white" href="Project GSmart.html#Contact"><i class="fas fa-address-book"></i>&nbsp;Contact</a> </li>
+		<li><a class="nav-link text-white" href="#"><i class="fa fa-search"></i></a></li>
+	      
+        </ul>
+	  </div>
+	</nav>
+
+</header>
+	
+	
+	
+	
+	<section class="container mt-2 mb-2 mr-0" id="Main_Section">
+	<div class="main-div row">
+		
+		<div class="container product col-md-6 text-center">
+			<img src="Vivo.jpg" class="mt-5" width="300px" height="500px">
+		</div>
+		
+		<div class="container product_details col-md-6 pt-3 pb-3">
+		<p style="font-family: 'Times New Roman', Times, serif;">
+    <b style="font-size: 25px;">Vivo X60 (Shimmer Blue, 8GB RAM, 128GB Storage)</b><br>
+ 
+
+			48MP+13MP+13MP Rear Camera | 32MP Selfie Camera<br>
+			16.65cm (6.56") AMOLED Display with 120 Hz refresh rate and 2376 x 1080 pixels resolution.<br>
+			Memory and SIM: 8GB RAM | 128GB internal memory | Dual SIM (nano+nano) dual-standby (5G).<br>
+			Funtouch OS 11.1 (based on Android 11) operating system with Qualcomm Snapdragon 870 octa core processor<br>
+			33W flash charging with 4300mAh battery (Type-C).</p>
+		
+		<button href="#AddedCart" class="modal-buttons" id="AddedCart">Add To Cart</button>
+
+	<div class="alert alert-success collapse" role="alert" id="myAlert">
+		<a id="linkClose" href="#" class="close" >&times;</a>
+   		Added to Cart!
+	</div>
+			
+			
+        <button href="#" class="modal-buttons" id="AddedFavourite">Add to Favourites</button>
+		
+		<div class="alert alert-warning collapse" role="alert" id="myAlert2">
+		<a id="linkClose2" href="#" class="close" >&times;</a>
+   		Added to Favourites!
+	</div>
+		
+		
+		
+		</div>
+		
+		</div>
+	
+	</section>
+
+	
+	
+	
+	
+	
+	<footer class="footer">
+	
+		
+		<div class="container">
+		<div class="row">
+			
+			<div class="col-md-12 text-center text-white">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <p>All Content Copyright Rights Reservered @ JGT</p>
+      		</div>
+			
+		</div>
+		</div>
+		
+	</footer>
+	
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	
+			$(document).ready(function(){
+	$('#AddedCart').click(function(){
+		$('#myAlert').show('fade');
+	});
+});
+		$('#linkClose').click(function(){
+			$('#myAlert').hide('fade');
+		});
+		
+		
+		$(document).ready(function(){
+	$('#AddedFavourite').click(function(){
+		$('#myAlert2').show('fade');
+	});
+});
+		$('#linkClose2').click(function(){
+			$('#myAlert2').hide('fade');
+		});
+
+	
+	</script>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+	
+	<script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color:black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/*#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 1000px;
+}*/
+#myVideo {
+    position: absolute;
+    top:0;
+	left:0;
+	right:0;
+	bottom:0;
+   
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+
+
+/*Login-RegisterBar*/
+.head1{
+	background-image: linear-gradient(to right, #7A1E92, #000000);
+}
+.btn-topmost{
+	color: white;
+	decoration: none;
+}
+.btn-topmost:hover{
+	color: navajowhite;
+}
+.item {
+    position:relative;
+    /*padding-top:20px;*/
+    display:inline-block;
+}
+.notify-badge{
+    position: absolute;
+    right:5px;
+    top:0px;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+	background-color: #BE8D82;
+    color:white;
+    padding:5px 10px;
+    font-size:10px;
+}
+
+/*Navbar*/
+.navbar{
+	background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);
+}
+/*.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+#banner {
+  width: 100%;
+  overflow: hidden;
+}*/
+#activehomebutton{
+	color: black !important;
+}
+.nav-link:hover{
+	color: black !important;
+	transform: scale(1.05);
+	transition: all .5s;
+}
+.dropdown-menu{
+	background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
+}
+.dropdown-item:hover{
+	background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);
+	color: white;
+	transform: scale(1.05);
+	transition: all .5s;
+}
+
+/*Carousel*/
+.carousel-item img {
+        max-height: 535px;
+        margin: 0 auto;
+}
+/*.container {
+  position: relative;
+}
+
+.image-class {
+  width: 100%;
+  height: auto;
+} */
+
+.text-container {
+  	position: absolute;
+  	top: 0;
+    left: 0;
+  	width: 100%;
+  	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+}
+#btn1{
+	text-align: center;
+	height: 50px;
+	width: 250px;
+	border-radius:100px;
+	border: 2px solid #FFFFFF;
+	
+}
+#btn2{
+	text-align: center;
+	height: 50px;
+	width: 250px;
+	border-radius:100px;
+	border: 2px solid #FFFFFF;
+	
+}
+#btn1,#btn2{
+	display: inline-block;
+	color:white;
+}
+#btn1:hover,#btn2:hover{
+	background-color: #000000;
+	transition: all .5s;
+}
+
+
+
+/*Search Box*/
+.search-box-2{
+	background-image: linear-gradient(to right, #383639, #000000, #391A48, #572A6D, #391A48, #000000, #383639);
+	min-height: 130px;
+}
+.selectpicker{
+	text-decoration: none;
+    cursor: pointer;
+	width: 150px;
+	height: 40px;
+    color: black;
+	background-color: white;
+	display:inline-block;
+	border: white 2px solid;
+}
+/*select {
+   appearance: none;        Remove default arrow
+    width: 150px;
+	height: 40px;
+} */
+#specialbox{
+	width: 185px;
+}
+.search-col{
+	margin: 0px;
+}
+#findbtn{
+	color:white;
+	border: 2px solid;
+	border-color: darkorchid;
+}
+#findbtn:hover{
+	background-color: #2D2B2B;
+}
+
+/*Cards Div1 Section*/
+.cards-div{
+	width: 100%;
+	min-height: 600px;
+	/*background-image: linear-gradient(to right, #280e6d, #5c1aba, #733fe5, #5d2381, #bb11ef, #7797f8); /*....Old Style....*/
+	/*background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);  /*Erase to get back to old style!*/
+}
+.btn-special{
+	background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);   /*Erase to get back to old style!*/
+	color:white;  /*Erase to get back to old style!*/
+}
+.cards-div2{
+	min-width: 100% !important;
+	min-height: 500px;
+	/*background-image: linear-gradient(to right, #9f55cd, #f29d85, #5d82f2, #2849dc, #04195a); ....Old Style....*/
+	background-image: url("Windows Phone Wallpaper 10090.jpg");
+	background-size: 1600px 1700px;
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+
+}
+/*.cards-div2 img{
+	min-height: 600px;
+	max-height: 850px;  Erase to get back to old style!
+}*/
+.cardsection1{
+	/*background-image: linear-gradient(to right, #38373E, #38373E, #020202, #38373E);   /*Erase to get back to old style!*/
+	background-color: transparent;
+	color:white;  /*Erase to get back to old style!*/
+	width:300px;
+	height:350px;
+	float:left;
+}
+.card-img-top1{
+	width:100px;
+	height:100px;
+}
+.card:hover{
+    color:white;
+	box-shadow: 0 10px 20px rgba(255,255,255,0.50), 0 4px 8px rgba(255,255,255,0.25);
+	/*box-shadow: 0 10px 20px rgba(0,0,0,0.70), 0 4px 8px rgba(0,0,0,0.35);*/
+	transform: scale(1.05);
+	transition: all .5s;
+}
+
+
+/*Cards Div2 Section*/
+.cards2{
+	background-color: black;
+	color: white;
+	margin-bottom: 30px;
+	font-size: 1px;
+}
+.cards2:hover{
+	background-color: black;
+	opacity: 0.9;
+	color:white;
+}
+.card-img-top2{
+	width:287px;
+	height:300px;
+}
+.card-img-overlay{
+	position: relative;
+}
+.top-left{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.bottom-right{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	text-decoration: line-through;
+}
+.bottom-right2{
+	position: absolute;
+	bottom: -5px;
+	right: 10px;
+}
+.btn-cards2{
+	background-color: #ffb400;
+	color:white;
+}
+.btn-cards2:hover{
+	background-color: #BA8300;
+	color: white;
+}
+
+/*Contact Form*/
+.form-control{
+	background-color:transparent;
+	color:white;
+}
+/*.special-btn2{
+	/*background-image: linear-gradient(to right, #7A1BA3, #8C00FC ,#8C00FC , #9C14FC , #AF2EFA , #C74EF4 , #DE6DF1 , #ED81EE, #ED81EE);
+	border: 2px solid;
+}
+.special-btn2:hover{
+	/*background-image: linear-gradient(to right,#ED81EE,#ED81EE,#DE6DF1,#C74EF4,#AF2EFA,#9C14FC,#8C00FC,#8C00FC,#7A1BA3);
+	border: 2px solid;
+	transition: all .5s;
+}*/
+
+
+/*Footer*/
+
+.footer{
+	background-image: url("Bitcoin1.jpg");
+	width:100%;
+	min-height: 300px;
+	background-size: 100% 300px;
+	/*background-size: cover;
+	background-repeat: no-repeat;*/
+}
+.darkened-image{
+	filter: brightness(100%);
+}
+
+
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Body */
+.modal-body {
+	padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
